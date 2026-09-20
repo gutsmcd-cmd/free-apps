@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0c0c0f" />
+    <meta
+      name="description"
+      content="About M@ Free Apps — free forever, offline, no login. Visa-honest: not monetizing yet."
+    />
+    <title>About — M@ Free Apps</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="logo" href="./index.html" aria-label="M@ Free Apps home">
+          <span class="logo-mark" aria-hidden="true">M@</span>
+          <span class="logo-text">M@ Free Apps <span>· offline</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="./index.html">Apps</a></li>
+          <li><a href="./index.html#general">General</a></li>
+          <li><a href="./index.html#japanese">Japanese</a></li>
+          <li><a href="./about.html" aria-current="page">About</a></li>
+          <li><a href="./suggest.html">Suggest</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <h1>About the family</h1>
+          <p>
+            Small offline apps by Mat (M@). Built in Japan. Shipped as installable web apps
+            you can use without creating an account.
+          </p>
+        </div>
+      </section>
+
+      <div class="wrap prose">
+        <div class="callout">
+          <strong>Visa-honest note.</strong>
+          I’m not monetizing these apps yet. No ads, no subscriptions, no “Pro” upsell.
+          That is a deliberate constraint — not a temporary teaser for a paywall later.
+        </div>
+
+        <h2>The pitch</h2>
+        <p>
+          <strong style="color: var(--text)">Truly free forever · no login · works offline · no ads.</strong>
+          Quality markets itself. If an app is useful, people share it. If it isn’t, no amount of
+          dark-pattern growth will fix that.
+        </p>
+
+        <h2>Two product lines</h2>
+        <ul>
+          <li>
+            <strong style="color: var(--text)">General utilities</strong> —
+            clean free remakes of tools that are usually ad-heavy or login-walled
+            (example: Three Things, Long Shot).
+          </li>
+          <li>
+            <strong style="color: var(--text)">Japanese-first alternatives</strong> —
+            tools that are great in English but weak or awkward in Japanese UI
+            (example: 画像しぼる).
+          </li>
+        </ul>
+
+        <h2>What “offline” means here</h2>
+        <p>
+          Each app is a Progressive Web App (PWA). After the first visit you can install it to
+          your home screen. Core features are designed to work without a network. Your files and
+          notes stay on your device — we don’t run a backend that needs your data.
+        </p>
+
+        <h2>What we don’t do</h2>
+        <ul>
+          <li>No account system</li>
+          <li>No analytics SDKs chasing you across the web</li>
+          <li>No ad networks</li>
+          <li>No “free trial then paywall” bait</li>
+        </ul>
+
+        <h2>Open source</h2>
+        <p>
+          Public apps live under
+          <a href="https://github.com/gutsmcd-cmd" rel="noopener">github.com/gutsmcd-cmd</a>.
+          Issues and pull requests are welcome when something is broken or unclear.
+        </p>
+
+        <p style="margin-top: 2rem">
+          <a class="btn btn-primary" href="./index.html">See the apps</a>
+          <a class="btn btn-ghost" href="./suggest.html" style="margin-left: 0.5rem">Suggest an idea</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          M@ Free Apps
+          <span>Truly free forever · no login · works offline · no ads.</span>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="./index.html">Apps</a>
+          <a href="./about.html">About</a>
+          <a href="./suggest.html">Suggest</a>
+          <a href="https://github.com/gutsmcd-cmd" rel="noopener">GitHub</a>
+        </nav>
+        <p class="footer-copy">Built by Mat in Japan. Not monetizing yet — on purpose.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
