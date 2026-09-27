@@ -17,6 +17,8 @@
   --teal-soft: rgba(45, 212, 191, 0.14);
   --coral: #f4837d;
   --coral-soft: rgba(244, 131, 125, 0.14);
+  --rojo: #e2574c;
+  --rojo-soft: rgba(226, 87, 76, 0.16);
   --ok: #7dcea0;
   --radius: 16px;
   --radius-sm: 10px;
@@ -340,6 +342,13 @@ a:hover {
 }
 .btn-coral:hover { filter: brightness(1.05); color: #1a1010; }
 
+.btn-rojo {
+  background: var(--rojo);
+  color: #fff;
+  text-decoration: none;
+}
+.btn-rojo:hover { filter: brightness(1.06); color: #fff; }
+
 .btn-sm {
   padding: 0.5rem 0.9rem;
   font-size: 0.86rem;
@@ -455,6 +464,12 @@ a:hover {
     radial-gradient(circle at 30% 70%, rgba(244, 131, 125, 0.32), transparent 48%),
     linear-gradient(160deg, #1a1010, #1a1214 60%);
 }
+.mock-rojo {
+  background:
+    radial-gradient(circle at 75% 25%, rgba(226, 87, 76, 0.34), transparent 46%),
+    radial-gradient(circle at 20% 85%, rgba(232, 168, 56, 0.18), transparent 44%),
+    linear-gradient(160deg, #1e0c0a, #141214 60%);
+}
 .mock-soon {
   background:
     radial-gradient(circle at 50% 40%, rgba(196, 181, 253, 0.12), transparent 50%),
@@ -495,6 +510,30 @@ a:hover {
 .mock-amber .mock-chip:nth-child(1) { background: var(--amber-soft); border-color: rgba(232, 168, 56, 0.35); }
 .mock-teal .mock-chip:nth-child(2) { background: var(--teal-soft); border-color: rgba(45, 212, 191, 0.35); }
 .mock-coral .mock-chip:nth-child(1) { background: var(--coral-soft); border-color: rgba(244, 131, 125, 0.35); }
+.mock-rojo .mock-chip:nth-child(2) { background: var(--rojo-soft); border-color: rgba(226, 87, 76, 0.4); }
+
+.mock-block-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.mock-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.app-sub {
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0;
+}
 
 .mock-block {
   flex: 1;
