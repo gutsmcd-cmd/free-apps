@@ -349,6 +349,13 @@ a:hover {
 }
 .btn-rojo:hover { filter: brightness(1.06); color: #fff; }
 
+.btn-accent {
+  background: var(--accent, var(--brand));
+  color: var(--accent-ink, #fff);
+  text-decoration: none;
+}
+.btn-accent:hover { filter: brightness(1.06); color: var(--accent-ink, #fff); }
+
 .btn-sm {
   padding: 0.5rem 0.9rem;
   font-size: 0.86rem;
@@ -469,6 +476,15 @@ a:hover {
     radial-gradient(circle at 75% 25%, rgba(226, 87, 76, 0.34), transparent 46%),
     radial-gradient(circle at 20% 85%, rgba(232, 168, 56, 0.18), transparent 44%),
     linear-gradient(160deg, #1e0c0a, #141214 60%);
+}
+.mock-accent {
+  background:
+    radial-gradient(circle at 75% 25%, color-mix(in srgb, var(--accent, #c4b5fd) 34%, transparent), transparent 46%),
+    linear-gradient(160deg, color-mix(in srgb, var(--accent, #c4b5fd) 14%, #0c0c0f), #141214 60%);
+}
+.mock-accent .mock-chip:nth-child(2) {
+  background: color-mix(in srgb, var(--accent, #c4b5fd) 16%, transparent);
+  border-color: color-mix(in srgb, var(--accent, #c4b5fd) 40%, transparent);
 }
 .mock-soon {
   background:

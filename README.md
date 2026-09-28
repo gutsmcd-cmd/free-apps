@@ -12,6 +12,16 @@ Marketing site for Mat’s free offline app family.
 | Long Shot | General | https://gutsmcd-cmd.github.io/long-shot/ |
 | 画像しぼる | Japanese-first | https://gutsmcd-cmd.github.io/gazou-shiboru/ |
 | ポコ・ア・ポコ スペイン語 (Poco a Poco) | Japanese-first | https://gutsmcd-cmd.github.io/poco-a-poco/ |
+| あと何日 | Japanese-first | https://gutsmcd-cmd.github.io/ato-nannichi/ |
+| 旅の持ち物 | Japanese-first | https://gutsmcd-cmd.github.io/tabi-no-mochimono/ |
+| 定型ぶん | Japanese-first | https://gutsmcd-cmd.github.io/teikei-bun/ |
+| モザイク一発 | Japanese-first | https://gutsmcd-cmd.github.io/mosaic-ippatsu/ |
+| 矢印一発 | Japanese-first | https://gutsmcd-cmd.github.io/yajirushi-ippatsu/ |
+| さっとメモ | Japanese-first | https://gutsmcd-cmd.github.io/satto-memo/ |
+| QR一発 | Japanese-first | https://gutsmcd-cmd.github.io/qr-ippatsu/ |
+| わりかん | Japanese-first | https://gutsmcd-cmd.github.io/warikan/ |
+| カウント一発 | Japanese-first | https://gutsmcd-cmd.github.io/count-ippatsu/ |
+| キッチンタイマー | Japanese-first | https://gutsmcd-cmd.github.io/kitchen-timer/ |
 
 Private apps (e.g. personal travel kits) are intentionally **not** listed.
 
@@ -55,5 +65,17 @@ Copy everything except `.git` into the repo and enable Pages from the root (or u
 - Long Shot — teal `#2dd4bf`
 - 画像しぼる — coral `#f4837d`
 - ポコ・ア・ポコ スペイン語 — rojo `#e2574c` (icon: `assets/poco-a-poco-icon.svg`, wraps the app’s icon-192.png)
+- あと何日 — `#ff7e5a` (icon: `assets/ato-nannichi-icon.svg`)
+- 旅の持ち物 — `#16a88e` (icon: `assets/tabi-no-mochimono-icon.svg`)
+- 定型ぶん — `#606dff` (icon: `assets/teikei-bun-icon.svg`)
+- モザイク一発 — `#8061f1` (icon: `assets/mosaic-ippatsu-icon.svg`)
+- 矢印一発 — `#f5b21d` (icon: `assets/yajirushi-ippatsu-icon.svg`)
+- さっとメモ — `#f9b30a` (icon: `assets/satto-memo-icon.svg`)
+- QR一発 — `#3d84fa` (icon: `assets/qr-ippatsu-icon.svg`)
+- わりかん — `#22bc5b` (icon: `assets/warikan-icon.svg`)
+- カウント一発 — `#9149fa` (icon: `assets/count-ippatsu-icon.svg`)
+- キッチンタイマー — `#f9693c` (icon: `assets/kitchen-timer-icon.svg`)
+
+The ten Japanese-first utilities above use the shared `.mock-accent` / `.btn-accent` classes with a per-card `--accent` inline style; each icon SVG wraps that app’s `public/icons/icon-192.png`.
 
 UI mocks on the cards are labeled placeholders, not product screenshots.
