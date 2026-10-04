@@ -46,11 +46,36 @@ try{if(localStorage.getItem("m-free-apps-lang")==="en")document.documentElement.
             <h2><span class="t-ja">日本語アプリの家族</span><span class="t-en">Japanese app family</span></h2>
             <p><span class="t-ja">日本語の名前と、日本のふだんに合わせた道具。</span><span class="t-en">Named in Japanese, shaped for everyday use in Japan.</span></p>
           </header>
-          <div class="grid">
-PLACEHOLDER
-          </div>
+          <div class="grid" id="card-mount"></div>
+        </div>
+      </section>
+      <section class="family family-gen" id="general">
+        <div class="wrap">
+          <header class="family-head">
+            <h2><span class="t-ja">ふだんの道具</span><span class="t-en">General utilities</span></h2>
+            <p><span class="t-ja">英語からはじまった、どこでも使える道具。</span><span class="t-en">English-first tools, useful anywhere.</span></p>
+          </header>
+          <div class="grid" id="card-mount-gen"></div>
+        </div>
+      </section>
+      <section class="faq-wrap">
+        <div class="wrap">
+          <details class="faq">
+            <summary><span class="t-ja">家族のほかのアプリは、どこで見られますか。</span><span class="t-en">How do I see the other apps in the family?</span></summary>
+            <p><span class="t-ja">このページです。ここに並んでいるのが、家族のアプリです。</span><span class="t-en">On this page. The apps in the family are listed here.</span></p>
+          </details>
+          <p class="suggest-link"><a href="./suggest.html"><span class="t-ja">足りない道具を提案する</span><span class="t-en">Suggest a missing tool</span></a></p>
         </div>
       </section>
     </main>
+    <footer class="site-footer">
+      <div class="wrap foot">
+        <p><span class="t-ja">Mat が Elon McApp と作っています。</span><span class="t-en">Mat makes them with Elon McApp.</span></p>
+        <p class="quiet"><span class="t-ja">各アプリのページから、ホーム画面に追加できます。</span><span class="t-en">Add any app to your home screen from its own page.</span></p>
+        <p><a href="https://github.com/gutsmcd-cmd" rel="noopener">GitHub</a></p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./cards.js"></script>
   </body>
 </html>
