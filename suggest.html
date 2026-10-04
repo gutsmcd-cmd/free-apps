@@ -1,116 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0c0c0f" />
-    <meta
-      name="description"
-      content="Suggest an app for the M@ Free Apps family — opens your email app. No backend."
-    />
-    <title>Suggest an app — M@ Free Apps</title>
+    <meta name="theme-color" content="#f3eee4" />
+    <title>提案 — M@</title>
+    <meta name="description" content="M@ の家族にアプリを提案する。メールアプリが開くだけ。" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <script>
+try{if(localStorage.getItem("m-free-apps-lang")==="en")document.documentElement.lang="en";}catch(e){}
+</script>
   </head>
   <body>
+    
     <header class="site-header">
-      <div class="wrap nav">
-        <a class="logo" href="./index.html" aria-label="M@ Free Apps home">
-          <span class="logo-mark" aria-hidden="true">M@</span>
-          <span class="logo-text">M@ Free Apps <span>· offline</span></span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
-          <span></span><span></span><span></span>
+      <div class="wrap bar">
+        <a class="logo" href="./index.html">M@</a>
+        <nav class="nav" id="nav-menu" aria-label="Primary">
+          <a href="./index.html"><span class="t-ja">アプリ</span><span class="t-en">Apps</span></a>
+          <a href="./index.html#japanese"><span class="t-ja">日本語</span><span class="t-en">Japanese</span></a>
+          <a href="./index.html#general"><span class="t-ja">道具</span><span class="t-en">Utilities</span></a>
+          <a href="./about.html"><span class="t-ja">について</span><span class="t-en">About</span></a>
+          <a href="./suggest.html" aria-current="page"><span class="t-ja">提案</span><span class="t-en">Suggest</span></a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-set-lang="ja" class="lang-btn">日本語</button>
+          <button type="button" data-set-lang="en" class="lang-btn">English</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="t-ja">メニュー</span><span class="t-en">Menu</span>
         </button>
-        <ul class="nav-links" id="nav-menu">
-          <li><a href="./index.html">Apps</a></li>
-          <li><a href="./index.html#general">General</a></li>
-          <li><a href="./index.html#japanese">Japanese</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./suggest.html" aria-current="page">Suggest</a></li>
-        </ul>
       </div>
     </header>
-
-    <main>
-      <section class="page-hero">
-        <div class="wrap">
-          <h1>Suggest an app</h1>
-          <p>
-            Got an idea that fits — free, offline, no login? Especially welcome: English tools
-            that are clumsy in Japanese. This form only opens your mail app; nothing is stored here.
-          </p>
-        </div>
-      </section>
-
+    <main class="prose-page">
       <div class="wrap">
+        <h1><span class="t-ja">道具を提案する</span><span class="t-en">Suggest a tool</span></h1>
+        <p class="lead"><span class="t-ja">無料、オフライン、ログインなし。特に、英語では便利なのに日本語だとかゆい道具。このフォームはメールアプリを開くだけで、ここには保存しません。</span><span class="t-en">Free, offline, no login. Especially welcome: handy English tools that feel clumsy in Japanese. This only opens your mail app. Nothing is stored here.</span></p>
         <form class="suggest-card" id="suggest-form" novalidate>
           <div class="field">
-            <label for="idea-name">App idea name</label>
-            <input id="idea-name" name="name" type="text" maxlength="80" placeholder="e.g. わりかん帳" required />
+            <label for="idea-name"><span class="t-ja">名前</span><span class="t-en">Name</span></label>
+            <input id="idea-name" name="name" type="text" maxlength="80" required data-ph-ja="例: わりかん帳" data-ph-en="e.g. a bill splitter" />
           </div>
-
           <div class="field">
-            <label for="idea-line">
-              Which line?
-              <span class="hint">General utility vs Japanese-first alternative</span>
-            </label>
+            <label for="idea-line"><span class="t-ja">どの家族？</span><span class="t-en">Which family?</span></label>
             <select id="idea-line" name="line">
-              <option value="General utility">General utility</option>
-              <option value="Japanese-first alternative" selected>Japanese-first alternative</option>
-              <option value="Not sure">Not sure</option>
+              <option value="General utility" data-ja="ふだんの道具" data-en="General utilities">ふだんの道具</option>
+              <option value="Japanese-first alternative" selected data-ja="日本語アプリの家族" data-en="Japanese app family">日本語アプリの家族</option>
+              <option value="Not sure" data-ja="わからない" data-en="Not sure">わからない</option>
             </select>
           </div>
-
           <div class="field">
-            <label for="idea-ref">English reference (optional)</label>
-            <input
-              id="idea-ref"
-              name="reference"
-              type="text"
-              maxlength="120"
-              placeholder="e.g. Squoosh, PackPoint, TextExpander"
-            />
+            <label for="idea-ref"><span class="t-ja">英語の参考（なくてもいい）</span><span class="t-en">English reference (optional)</span></label>
+            <input id="idea-ref" name="reference" type="text" maxlength="120" data-ph-ja="例: Squoosh" data-ph-en="e.g. Squoosh, PackPoint" />
           </div>
-
           <div class="field">
-            <label for="idea-why">Why it fits</label>
-            <textarea
-              id="idea-why"
-              name="why"
-              maxlength="2000"
-              placeholder="What problem does it solve? Why is the current option ad-heavy, login-walled, or weak in Japanese?"
-              required
-            ></textarea>
+            <label for="idea-why"><span class="t-ja">なぜ合うか</span><span class="t-en">Why it fits</span></label>
+            <textarea id="idea-why" name="why" maxlength="2000" required data-ph-ja="どんな困りごとか。今の道具は広告、ログイン、日本語の弱さのどれか。" data-ph-en="What problem? Is today’s option full of ads, a login wall, or weak in Japanese?"></textarea>
           </div>
-
-          <button class="btn btn-primary" type="submit">Open in email app</button>
-          <p class="form-note">
-            Sends to <strong style="color: var(--text-muted)">gutsmcd@gmail.com</strong> via
-            <code style="font-family: var(--mono); font-size: 0.85em">mailto:</code>
-            — no server, no tracking. Or write directly:
-            <a href="mailto:gutsmcd@gmail.com?subject=App%20suggestion%20for%20M%40%20Free%20Apps">email Mat</a>.
-          </p>
+          <button class="open-btn" type="submit"><span class="t-ja">メールアプリで開く</span><span class="t-en">Open in email</span></button>
+          <p class="quiet"><span class="t-ja">gutsmcd@gmail.com へ、mailto: で送ります。サーバーはありません。</span><span class="t-en">Sends to gutsmcd@gmail.com with mailto:. No server, no tracking.</span> <a href="mailto:gutsmcd@gmail.com?subject=App%20suggestion%20for%20M%40%20Free%20Apps"><span class="t-ja">直接メール</span><span class="t-en">Email Mat</span></a></p>
         </form>
       </div>
     </main>
-
+    
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <div class="footer-brand">
-          M@ Free Apps
-          <span>Truly free forever · no login · works offline · no ads.</span>
-        </div>
-        <nav class="footer-links" aria-label="Footer">
-          <a href="./index.html">Apps</a>
-          <a href="./about.html">About</a>
-          <a href="./suggest.html">Suggest</a>
-          <a href="https://github.com/gutsmcd-cmd" rel="noopener">GitHub</a>
-        </nav>
-        <p class="footer-copy">Suggestions help shape the Japanese-first roadmap.</p>
+      <div class="wrap foot">
+        <p><span class="t-ja">Mat が Elon McApp と作っています。</span><span class="t-en">Mat makes them with Elon McApp.</span></p>
+        <p class="quiet"><span class="t-ja">各アプリのページから、ホーム画面に追加できます。</span><span class="t-en">Add any app to your home screen from its own page.</span></p>
+        <p><a href="https://github.com/gutsmcd-cmd" rel="noopener">GitHub</a></p>
       </div>
     </footer>
-
     <script src="./script.js"></script>
+
   </body>
 </html>
