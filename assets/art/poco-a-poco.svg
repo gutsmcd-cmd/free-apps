@@ -1,0 +1,11 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="46" y="36" width="150" height="108" rx="8" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <rect x="62" y="54" width="86" height="8" rx="4" fill="#3e6b4c"/>
+  <rect x="62" y="72" width="118" height="6" rx="3" fill="#e7dccb"/>
+  <rect x="62" y="86" width="100" height="6" rx="3" fill="#e7dccb"/>
+  <rect x="62" y="100" width="70" height="6" rx="3" fill="#e7dccb"/>
+  <circle cx="230" cy="78" r="36" fill="#f3d3c4"/>
+  <text x="230" y="86" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#2c261f">ñ</text>
+  <circle cx="250" cy="128" r="16" fill="#e4b15c"/>
+  <text x="250" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2c261f">あ</text>
+</svg>

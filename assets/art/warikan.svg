@@ -1,0 +1,8 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <ellipse cx="160" cy="130" rx="70" ry="10" fill="#e7dccb"/>
+  <circle cx="118" cy="92" r="28" fill="#fffaf3" stroke="#d07a52" stroke-width="3"/>
+  <circle cx="202" cy="92" r="28" fill="#fffaf3" stroke="#3e6b4c" stroke-width="3"/>
+  <text x="118" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#2c261f">¥</text>
+  <text x="202" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#2c261f">¥</text>
+  <path d="M146 92 h28" stroke="#2c261f" stroke-width="2" stroke-linecap="round"/>
+</svg>

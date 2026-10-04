@@ -1,0 +1,9 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="70" y="36" width="180" height="36" rx="18" fill="#fffaf3" stroke="#e4b15c" stroke-width="2"/>
+  <circle cx="96" cy="54" r="8" fill="#e4b15c"/>
+  <text x="118" y="59" font-family="Georgia, serif" font-size="16" fill="#2c261f">1</text>
+  <rect x="70" y="80" width="180" height="36" rx="18" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <text x="118" y="103" font-family="Georgia, serif" font-size="16" fill="#2c261f">2</text>
+  <rect x="70" y="124" width="180" height="28" rx="14" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <text x="118" y="143" font-family="Georgia, serif" font-size="14" fill="#6d645b">3</text>
+</svg>

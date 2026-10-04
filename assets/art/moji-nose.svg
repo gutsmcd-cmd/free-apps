@@ -1,0 +1,7 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="46" y="36" width="160" height="108" rx="8" fill="#d5e6df"/>
+  <circle cx="100" cy="78" r="16" fill="#e4b15c"/>
+  <path d="M46 120 L100 86 L150 120 Z" fill="#3e6b4c"/>
+  <rect x="190" y="78" width="88" height="36" rx="6" fill="#fffaf3" stroke="#2c261f" stroke-width="1.5"/>
+  <text x="234" y="102" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#2c261f">Aa</text>
+</svg>
