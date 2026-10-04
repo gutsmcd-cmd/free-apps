@@ -1,0 +1,6 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="70" y="40" width="180" height="96" rx="16" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <text x="160" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#2c261f">7</text>
+  <circle cx="160" cy="156" r="14" fill="#3e6b4c"/>
+  <path d="M160 148 v16 M152 156 h16" stroke="#fffaf3" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

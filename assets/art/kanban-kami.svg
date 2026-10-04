@@ -1,0 +1,9 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="36" y="36" width="76" height="108" rx="8" fill="#fffaf3" stroke="#e4d7c4"/>
+  <rect x="122" y="36" width="76" height="108" rx="8" fill="#fffaf3" stroke="#e4d7c4"/>
+  <rect x="208" y="36" width="76" height="108" rx="8" fill="#fffaf3" stroke="#e4d7c4"/>
+  <rect x="48" y="52" width="52" height="22" rx="4" fill="#f3d3c4"/>
+  <rect x="48" y="80" width="52" height="22" rx="4" fill="#e4d7c4"/>
+  <rect x="134" y="52" width="52" height="28" rx="4" fill="#e4b15c"/>
+  <rect x="220" y="52" width="52" height="18" rx="4" fill="#3e6b4c"/>
+</svg>

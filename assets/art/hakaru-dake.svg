@@ -1,0 +1,7 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <circle cx="150" cy="90" r="48" fill="none" stroke="#2c261f" stroke-width="6"/>
+  <path d="M150 90 L150 58" stroke="#d07a52" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="90" r="4" fill="#2c261f"/>
+  <rect x="214" y="70" width="52" height="40" rx="8" fill="#3e6b4c"/>
+  <text x="240" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#fffaf3">7d</text>
+</svg>

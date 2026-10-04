@@ -1,0 +1,8 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="48" y="46" width="168" height="96" rx="8" fill="#241f1a"/>
+  <polygon points="118,74 118,114 156,94" fill="#f6f1e7"/>
+  <path d="M230 70 h28 v48 h-28 z" fill="#d07a52"/>
+  <path d="M236 94 h16" stroke="#fffaf3" stroke-width="2"/>
+  <path d="M248 86 l10 8 -10 8" fill="none" stroke="#fffaf3" stroke-width="2"/>
+  <circle cx="258" cy="128" r="10" fill="#e4d7c4"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <circle cx="160" cy="88" r="58" fill="#fffaf3" stroke="#e4d7c4" stroke-width="3"/>
+  <circle cx="160" cy="88" r="4" fill="#2c261f"/>
+  <path d="M160 88 L160 48" stroke="#2c261f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M160 88 L196 100" stroke="#d07a52" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="160" cy="36" r="3" fill="#3e6b4c"/>
+  <rect x="78" y="132" width="164" height="22" rx="11" fill="#3e6b4c"/>
+  <text x="160" y="148" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#fffaf3">12</text>
+</svg>
