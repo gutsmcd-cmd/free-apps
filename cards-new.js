@@ -13,6 +13,13 @@
       en: "Photo Collage",
       lineJa: "写真を並べて、1枚に。",
       lineEn: "Put photos side by side, as one."
+    },
+    {
+      slug: "in-wo-osu",
+      ja: "印を押す",
+      en: "Stamp &amp; Sign",
+      lineJa: "書類に、はんこやサインを。",
+      lineEn: "Add your seal or signature to a document."
     }
   ];
 
