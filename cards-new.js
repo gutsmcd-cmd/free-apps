@@ -20,6 +20,13 @@
       en: "Stamp &amp; Sign",
       lineJa: "書類に、はんこやサインを。",
       lineEn: "Add your seal or signature to a document."
+    },
+    {
+      slug: "tabi-no-phrase",
+      ja: "旅のフレーズ",
+      en: "Travel Phrases",
+      lineJa: "旅先で、見せて伝える。",
+      lineEn: "Show a phrase to people abroad."
     }
   ];
 
