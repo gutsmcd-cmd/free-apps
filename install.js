@@ -43,6 +43,7 @@
         "<li>" + t("<b>最初の一度だけ</b>：「不明なアプリのインストール」を聞かれたら「この提供元を許可」をオンにして、戻ります。", "<b>First time only:</b> if asked about installing unknown apps, turn on “Allow from this source”, then go back.") + "</li>" +
         "<li>" + t("Play プロテクトの注意が出たら「詳細」→「インストールする」。Play ストア以外のアプリには、いつも出る表示です。", "If Play Protect warns you, tap “More details” → “Install anyway”. It shows this for any app not from the Play Store.") + "</li>" +
         "<li>" + t("「インストール」を押して完了。", "Tap “Install”. Done.") + "</li>" +
+        "<li>" + t("特別な許可が必要なアプリ（ブラック画面）で「制限付き設定」と出たら：アプリ情報 → ⋮ →「制限付き設定を許可」。", "Apps that need a special permission (Black Screen): if Android says a setting is restricted, go to App info → ⋮ → “Allow restricted settings”.") + "</li>" +
         "</ol>" +
         '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面は除く）。Chrome があると全画面で動きます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
         '<form method="dialog"><button class="open-btn" type="submit">' + t("閉じる", "Close") + "</button></form>";
