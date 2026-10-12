@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M@ Apps — The House</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 20px; background: #f9f7f4; color: #222; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1 { font-family: serif; font-weight: normal; letter-spacing: 1px; }
+    .container { display: flex; gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .house-side { flex: 1; position: relative; }
+    .house-side img { width: 100%; height: auto; display: block; border: 1px solid #ddd; background: white; }
+    .room-btn { position: absolute; background: rgba(255,255,255,0.7); border: 1px solid #999; padding: 4px 8px; font-size: 12px; cursor: pointer; border-radius: 4px; }
+    .room-btn:hover, .room-btn.active { background: #fff; border-color: #000; font-weight: bold; }
+    .detail-side { flex: 1; background: white; padding: 20px; border: 1px solid #ddd; min-height: 400px; }
+    .app-card { border: 1px solid #eee; padding: 10px; margin: 10px 0; border-radius: 4px; }
+    .app-card a { color: #0066cc; text-decoration: none; font-weight: bold; }
+    .app-card a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 40px; font-size: 14px; }
+    .lang-toggle { margin-bottom: 10px; }
+    @media (max-width: 800px) { .container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>M@ Apps</h1>
+    <p>... a family of TRULY free apps :D</p>
+    <p>* No adverts * No logins * Lightweight and easy to use * Able to work fully offline * Phone and PC compatible</p>
+    <div class="lang-toggle">
+      <button onclick="setLang('ja')">日本語</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+  </header>
+  <div class="container">
+    <div class="house-side">
+      <img src="house.jpg" alt="App House cutaway" id="house-img">
+      <button class="room-btn" style="top: 22%; left: 28%;" data-room="foyer">Foyer</button>
+      <button class="room-btn" style="top: 18%; left: 55%;" data-room="study">Study</button>
+      <button class="room-btn" style="top: 48%; left: 22%;" data-room="workshop">Workshop</button>
+      <button class="room-btn" style="top: 48%; left: 48%;" data-room="kitchen">Kitchen</button>
+      <button class="room-btn" style="top: 38%; left: 72%;" data-room="lounge">Lounge</button>
+      <button class="room-btn" style="top: 72%; left: 42%;" data-room="game">Game Room</button>
+    </div>
+    <div class="detail-side" id="detail">
+      <h2>Welcome to the House</h2>
+      <p>Click a room on the house to see the apps that live there.</p>
+      <p>All apps are free, offline-first, no login, no ads.</p>
+    </div>
+  </div>
+  <footer>
+    <a href="about.html">About the family</a> · <a href="suggest.html">Suggest a tool</a> · <a href="https://github.com/gutsmcd-cmd">GitHub</a>
+  </footer>
+  <script>
+    const rooms = {
+      foyer: {
+        en: { title: "Foyer", desc: "Entrance and overview.", apps: [] },
+        ja: { title: "玄関", desc: "入り口と概要。", apps: [] }
+      },
+      study: {
+        en: { title: "Study", desc: "Priorities, notes, language, and learning tools.", apps: [
+          { name: "Three Things", url: "https://gutsmcd-cmd.github.io/three-things/", desc: "Pick at most three must-do tasks for today." },
+          { name: "Satto Memo", url: "https://gutsmcd-cmd.github.io/satto-memo/", desc: "Quick offline memo." },
+          { name: "Poco a Poco", url: "https://gutsmcd-cmd.github.io/poco-a-poco/", desc: "Offline Spanish for Japanese speakers." },
+          { name: "Tabi no Phrase", url: "https://gutsmcd-cmd.github.io/tabi-no-phrase/", desc: "Travel phrasebook to show locals." },
+          { name: "Osaka Takken", url: "https://gutsmcd-cmd.github.io/osaka-takken/", desc: "Companion for learning real-estate work in Osaka." }
+        ]},
+        ja: { title: "書斎", desc: "優先順位、メモ、言語、学習の道具。", apps: [
+          { name: "Three Things", url: "https://gutsmcd-cmd.github.io/three-things/", desc: "今日やることを最大3つ。" },
+          { name: "さっとメモ", url: "https://gutsmcd-cmd.github.io/satto-memo/", desc: "すばやいオフラインメモ。" },
+          { name: "ポコ・ア・ポコ", url: "https://gutsmcd-cmd.github.io/poco-a-poco/", desc: "日本語話者向けオフラインスペイン語。" },
+          { name: "旅のフレーズ", url: "https://gutsmcd-cmd.github.io/tabi-no-phrase/", desc: "現地の人に見せる旅行フレーズ。" },
+          { name: "大阪宅建", url: "https://gutsmcd-cmd.github.io/osaka-takken/", desc: "大阪の不動産仕事を学ぶ無料アプリ。" }
+        ]}
+      },
+      workshop: {
+        en: { title: "Workshop / Garage", desc: "Image, document, and system utilities.", apps: [
+          { name: "Long Shot", url: "https://gutsmcd-cmd.github.io/long-shot/", desc: "Stitch screenshots into one tall PNG." },
+          { name: "Gazou Shiboru", url: "https://gutsmcd-cmd.github.io/gazou-shiboru/", desc: "Compress images." },
+          { name: "Collage Chou", url: "https://gutsmcd-cmd.github.io/collage-chou/", desc: "2–6 photos into one collage." },
+          { name: "PDF Ippatsu", url: "https://gutsmcd-cmd.github.io/pdf-ippatsu/", desc: "Photos to PDF or join PDFs." },
+          { name: "In wo Osu", url: "https://gutsmcd-cmd.github.io/in-wo-osu/", desc: "Add seal or signature to PDF or photo." },
+          { name: "Loupe", url: "https://gutsmcd-cmd.github.io/loupe/", desc: "Camera magnifier for small print." },
+          { name: "Black Screen", url: "https://github.com/gutsmcd-cmd/black-screen", desc: "Black out screen while video plays (Android)." }
+        ]},
+        ja: { title: "工房 / ガレージ", desc: "画像、文書、システム系の道具。", apps: [
+          { name: "Long Shot", url: "https://gutsmcd-cmd.github.io/long-shot/", desc: "スクリーンショットを縦長PNGに。" },
+          { name: "画像しぼる", url: "https://gutsmcd-cmd.github.io/gazou-shiboru/", desc: "画像を圧縮。" },
+          { name: "コラージュ帳", url: "https://gutsmcd-cmd.github.io/collage-chou/", desc: "2〜6枚の写真をコラージュに。" },
+          { name: "PDF一発", url: "https://gutsmcd-cmd.github.io/pdf-ippatsu/", desc: "写真をPDFに、またはPDFを結合。" },
+          { name: "印を押す", url: "https://gutsmcd-cmd.github.io/in-wo-osu/", desc: "PDFや写真にはんこやサイン。" },
+          { name: "ルーペ", url: "https://gutsmcd-cmd.github.io/loupe/", desc: "小さい文字用カメラ拡大鏡。" },
+          { name: "ブラック画面", url: "https://github.com/gutsmcd-cmd/black-screen", desc: "動画再生中に画面を黒く（Android）。" }
+        ]}
+      },
+      kitchen: {
+        en: { title: "Kitchen", desc: "Everyday domestic tools.", apps: [
+          { name: "Warikan", url: "https://gutsmcd-cmd.github.io/warikan/", desc: "Split bills simply." },
+          { name: "Gomi Touban", url: "https://gutsmcd-cmd.github.io/gomi-touban/", desc: "Garbage duty tracker." }
+        ]},
+        ja: { title: "キッチン", desc: "ふだんの生活の道具。", apps: [
+          { name: "わりかん", url: "https://gutsmcd-cmd.github.io/warikan/", desc: "簡単に割り勘。" },
+          { name: "ごみ当番", url: "https://gutsmcd-cmd.github.io/gomi-touban/", desc: "ごみ当番トラッカー。" }
+        ]}
+      },
+      lounge: {
+        en: { title: "Lounge", desc: "Conversational and multi-tool experiments.", apps: [
+          { name: "Ask All", url: "https://gutsmcd-cmd.github.io/ask-all/", desc: "Ask several free AIs at once and combine answers." }
+        ]},
+        ja: { title: "ラウンジ", desc: "会話的な道具と実験。", apps: [
+          { name: "Ask All", url: "https://gutsmcd-cmd.github.io/ask-all/", desc: "複数の無料AIに同時に聞いて答えをまとめる。" }
+        ]}
+      },
+      game: {
+        en: { title: "Game Room", desc: "Games and experimental projects (more coming).", apps: [] },
+        ja: { title: "ゲームルーム", desc: "ゲームと実験的なプロジェクト（これから追加）。", apps: [] }
+      }
+    };
+    let currentLang = 'en';
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+    }
+    function showRoom(roomKey) {
+      const room = rooms[roomKey][currentLang];
+      const detail = document.getElementById('detail');
+      let html = `<h2>${room.title}</h2><p>${room.desc}</p>`;
+      if (room.apps.length === 0) {
+        html += `<p>More apps coming soon.</p>`;
+      } else {
+        room.apps.forEach(app => {
+          html += `<div class="app-card"><a href="${app.url}" target="_blank">${app.name}</a><p>${app.desc}</p></div>`;
+        });
+      }
+      detail.innerHTML = html;
+      document.querySelectorAll('.room-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.room-btn[data-room="${roomKey}"]`).classList.add('active');
+    }
+    document.querySelectorAll('.room-btn').forEach(btn => {
+      btn.addEventListener('click', () => showRoom(btn.dataset.room));
+    });
+    showRoom('foyer');
+  </script>
+</body>
+</html>
