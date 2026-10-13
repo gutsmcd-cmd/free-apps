@@ -4,7 +4,7 @@
       slug: "loupe",
       ja: "ルーペ",
       en: "Magnifier",
-      lineJa: "小さな文字を、大きく見る。",
+      lineJa: "小さな文字を、カメラで大きく。",
       lineEn: "Read small print with your camera."
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       slug: "in-wo-osu",
-      ja: "印を押す",
+      ja: "はんこ押し",
       en: "Stamp &amp; Sign",
       lineJa: "書類に、はんこやサインを。",
       lineEn: "Add your seal or signature to a document."
@@ -25,7 +25,7 @@
       slug: "tabi-no-phrase",
       ja: "旅のフレーズ",
       en: "Travel Phrases",
-      lineJa: "旅先で、見せて伝える。",
+      lineJa: "画面を見せて伝える、旅の会話集。",
       lineEn: "Show a phrase to people abroad."
     },
     {
@@ -56,11 +56,11 @@
   var done = false;
 
   // cards-a.js / cards-b.js add their cards asynchronously, so wait for the
-  // "Soon" card (動画しぼる) and insert just before it. Fall back to appending.
+  // "Soon" card (動画を軽く) and insert just before it. Fall back to appending.
   function findSoon() {
     var soon = mount.querySelectorAll("article.card.is-soon");
     for (var i = 0; i < soon.length; i++) {
-      if (soon[i].textContent.indexOf("動画しぼる") !== -1) return soon[i];
+      if (soon[i].textContent.indexOf("動画を軽く") !== -1) return soon[i];
     }
     return null;
   }
