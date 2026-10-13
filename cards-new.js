@@ -27,6 +27,13 @@
       en: "Travel Phrases",
       lineJa: "旅先で、見せて伝える。",
       lineEn: "Show a phrase to people abroad."
+    },
+    {
+      slug: "iki-wo-suu",
+      ja: "いきをすう",
+      en: "Breathe",
+      lineJa: "ゆっくり、息を整える。",
+      lineEn: "Slow down and breathe."
     }
   ];
 
