@@ -1,0 +1,15 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="34" y="26" width="200" height="96" rx="10" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <rect x="34" y="26" width="200" height="22" rx="10" fill="#3e6b4c"/>
+  <rect x="34" y="38" width="200" height="10" fill="#3e6b4c"/>
+  <text x="50" y="80" font-family="Georgia, serif" font-size="24" font-weight="700" fill="#2c261f">Welcom</text>
+  <text x="50" y="108" font-family="Georgia, serif" font-size="18" fill="#2c261f">to our restarant</text>
+  <path d="M50 86 q5 -5 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0" fill="none" stroke="#d6453d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M116 113 q4 -4 8 0 t8 0 t8 0 t8 0 t8 0 t8 0 t8 0 t8 0 t8 0" fill="none" stroke="#d6453d" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="58" y="126" width="140" height="40" rx="12" fill="#2c261f"/>
+  <path d="M66 126 l9 -9 l9 9 z" fill="#2c261f"/>
+  <text x="72" y="153" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#fffaf3">Welcome ✓</text>
+  <rect x="246" y="40" width="50" height="40" rx="8" fill="#e4b15c"/>
+  <rect x="260" y="32" width="22" height="10" rx="3" fill="#e4b15c"/>
+  <circle cx="271" cy="60" r="11" fill="#fffaf3"/><circle cx="271" cy="60" r="6" fill="#2c261f"/>
+</svg>

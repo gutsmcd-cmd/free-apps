@@ -48,6 +48,13 @@
       en: "One-Tap Ask",
       lineJa: "よくある質問を、AIにひと押しで。",
       lineEn: "Send ready-made questions to your AI in one tap."
+    },
+    {
+      slug: "spell-camera",
+      ja: "スペルチェックカメラ",
+      en: "Spell Check Camera",
+      lineJa: "看板やメニューの英語のミスを見つける。",
+      lineEn: "Spot English spelling mistakes on signs and menus."
     }
   ];
 
