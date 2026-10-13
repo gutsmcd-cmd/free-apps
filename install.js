@@ -40,12 +40,12 @@
         "<ol>" +
         "<li>" + t("「アプリを入れる」を押して、ダウンロードします。", "Tap “Install app” to download it.") + "</li>" +
         "<li>" + t("終わったら、通知（またはダウンロード）からファイルを開きます。", "When it finishes, open the file from the notification (or Downloads).") + "</li>" +
-        "<li>" + t("<b>最初の一度だけ</b>：「不明なアプリのインストール」を聞かれたら「この提供元を許可」をオンにして、戻ります。", "<b>First time only:</b> if asked about installing unknown apps, turn on “Allow from this source”, then go back.") + "</li>" +
-        "<li>" + t("Play プロテクトの注意が出たら「詳細」→「インストールする」。Play ストア以外のアプリには、いつも出る表示です。", "If Play Protect warns you, tap “More details” → “Install anyway”. It shows this for any app not from the Play Store.") + "</li>" +
+        "<li>" + t("<b>最初の1回だけ</b>：「不明なアプリのインストール」の画面が出たら、「この提供元のアプリを許可」をオンにして戻ります。", "<b>First time only:</b> if asked about installing unknown apps, turn on “Allow from this source”, then go back.") + "</li>" +
+        "<li>" + t("Play プロテクトの警告が出たら「詳細」→「インストールする」。Play ストア以外のアプリでは、いつも表示されます。", "If Play Protect warns you, tap “More details” → “Install anyway”. It shows this for any app not from the Play Store.") + "</li>" +
         "<li>" + t("「インストール」を押して完了。", "Tap “Install”. Done.") + "</li>" +
         "<li>" + t("特別な許可が必要なアプリ（ブラック画面、浮かぶ時計）で「制限付き設定」と出たら：アプリ情報 → ⋮ →「制限付き設定を許可」。", "Apps that need a special permission (Black Screen, Floating Clock): if Android says a setting is restricted, go to App info → ⋮ → “Allow restricted settings”.") + "</li>" +
         "</ol>" +
-        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面と浮かぶ時計は除く）。Chrome があると全画面で動きます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen and Floating Clock). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
+        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面と浮かぶ時計は除く）。Chrome が入っていれば、全画面で使えます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen and Floating Clock). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
         '<form method="dialog"><button class="open-btn" type="submit">' + t("閉じる", "Close") + "</button></form>";
       document.body.appendChild(help);
     }
@@ -105,7 +105,7 @@
       box.innerHTML = '<a class="open-btn" href="' + APK_DIR + slug + '.apk" download>' + t("アプリを入れる", "Install app") + "</a>";
       var body = "";
       if (appUrl) {
-        body += "<p>" + t('<a href="' + appUrl + '" rel="noopener">ブラウザで開く</a>（入れずに使う）', '<a href="' + appUrl + '" rel="noopener">Open in browser</a> (use without installing)') + "</p>" +
+        body += "<p>" + t('<a href="' + appUrl + '" rel="noopener">ブラウザで開く</a>（インストールせずに使う）', '<a href="' + appUrl + '" rel="noopener">Open in browser</a> (use without installing)') + "</p>" +
           "<p>" + t("または、開いたページで Chrome のメニュー ⋮ →「ホーム画面に追加」。", "Or, on that page, Chrome menu ⋮ → “Add to Home screen”.") + "</p>";
       }
       body += '<p><a href="#" class="inst-help">' + t("APK の入れ方", "How to install the APK") + "</a></p>";
@@ -130,7 +130,7 @@
     box.innerHTML = '<a class="open-btn" href="' + appUrl + '" rel="noopener">' + t("開く", "Open") + "</a>";
     var tip = IS_IOS
       ? t("Safari で開いて、共有ボタン →「ホーム画面に追加」。", "Open it in Safari, then Share → “Add to Home Screen”.")
-      : t("Chrome / Edge で開いて、アドレスバーのインストール アイコン（またはメニュー →「アプリをインストール」）。", "Open it in Chrome or Edge, then click the install icon in the address bar (or menu → “Install app”).");
+      : t("Chrome / Edge で開いて、アドレスバーのインストールアイコン（またはメニュー →「アプリをインストール」）。", "Open it in Chrome or Edge, then click the install icon in the address bar (or menu → “Install app”).");
     addToggle(box, { label: t("アプリとして入れる", "Add as an app"), body: "<p>" + tip + "</p>" });
   }
 
@@ -150,7 +150,7 @@
     '<a class="art-link" href="https://github.com/gutsmcd-cmd/black-screen" rel="noopener">' +
     '<div class="art"><img class="illu" src="./assets/art/black-screen.svg" alt="" width="320" height="176" /></div>' +
     '<div class="card-copy"><h3>' + t("ブラック画面", "Black Screen") + "</h3>" +
-    '<p class="line">' + t("画面を真っ黒に、動画はそのまま。", "Black out the screen; video keeps playing.") + "</p></div></a>" +
+    '<p class="line">' + t("画面を真っ黒に。動画や音楽は止まらない。", "Black out the screen; video keeps playing.") + "</p></div></a>" +
     '<a class="src" href="https://github.com/gutsmcd-cmd/black-screen" rel="noopener">GitHub</a></article>';
 
   function ensureBlackScreen(gen) {
