@@ -17,7 +17,7 @@
     {
       slug: "in-wo-osu",
       ja: "はんこ押し",
-      en: "Stamp &amp; Sign",
+      en: "Stamp & Sign",
       lineJa: "書類に、はんこやサインを。",
       lineEn: "Add your seal or signature to a document."
     },
@@ -41,6 +41,13 @@
       en: "Cutout",
       lineJa: "写真の背景を消して、組み合わせる。",
       lineEn: "Remove backgrounds and build new pictures."
+    },
+    {
+      slug: "one-tap-ask",
+      ja: "ひと押し質問",
+      en: "One-Tap Ask",
+      lineJa: "よくある質問を、AIにひと押しで。",
+      lineEn: "Send ready-made questions to your AI in one tap."
     }
   ];
 
