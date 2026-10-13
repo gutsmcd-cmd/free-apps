@@ -45,7 +45,7 @@
         "<li>" + t("「インストール」を押して完了。", "Tap “Install”. Done.") + "</li>" +
         "<li>" + t("特別な許可が必要なアプリ（ブラック画面、浮かぶ時計）で「制限付き設定」と出たら：アプリ情報 → ⋮ →「制限付き設定を許可」。", "Apps that need a special permission (Black Screen, Floating Clock): if Android says a setting is restricted, go to App info → ⋮ → “Allow restricted settings”.") + "</li>" +
         "</ol>" +
-        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面と浮かぶ時計は除く）。Chrome が入っていれば、全画面で使えます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen and Floating Clock). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
+        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面・浮かぶ時計・アプリ図鑑は除く）。Chrome が入っていれば、全画面で使えます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen, Floating Clock and App Guide). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
         '<form method="dialog"><button class="open-btn" type="submit">' + t("閉じる", "Close") + "</button></form>";
       document.body.appendChild(help);
     }
@@ -174,9 +174,24 @@
     gen.querySelector('[data-apk="black-screen"]').insertAdjacentHTML("afterend", FLOATING_CLOCK);
   }
 
+  // ---------- App Guide card (General utilities, Android APK only) ----------
+  var APP_GUIDE = '<article class="card" data-apk="app-guide" data-apk-only="1">' +
+    '<a class="art-link" href="https://github.com/gutsmcd-cmd/app-guide" rel="noopener">' +
+    '<div class="art"><img class="illu" src="./assets/art/app-guide.svg" alt="" width="320" height="176" /></div>' +
+    '<div class="card-copy"><h3>' + t("アプリ図鑑", "App Guide") + "</h3>" +
+    '<p class="line">' + t("スマホの中のアプリを、ひと目で。", "Remember what every app on your phone does.") + "</p></div></a>" +
+    '<a class="src" href="https://github.com/gutsmcd-cmd/app-guide" rel="noopener">GitHub</a></article>';
+
+  function ensureAppGuide(gen) {
+    if (!gen || !gen.querySelector('[data-apk="floating-clock"]')) return;
+    if (gen.querySelector('[data-apk="app-guide"]')) return;
+    gen.querySelector('[data-apk="floating-clock"]').insertAdjacentHTML("afterend", APP_GUIDE);
+  }
+
   function scan() {
     ensureBlackScreen(document.getElementById("card-mount-gen"));
     ensureFloatingClock(document.getElementById("card-mount-gen"));
+    ensureAppGuide(document.getElementById("card-mount-gen"));
     ["card-mount", "card-mount-gen"].forEach(function (id) {
       var m = document.getElementById(id);
       if (!m) return;
