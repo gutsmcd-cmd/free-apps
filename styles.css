@@ -89,6 +89,26 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
   padding: 0.75rem 1rem 1rem;
 }
+.app-house-banner {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.app-house-banner .wrap {
+  display: flex;
+  align-items: center;
+  min-height: 2.6rem;
+  padding: 0.55rem 0;
+}
+.app-house-link {
+  color: var(--moss);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.98rem;
+  border-bottom: 1px solid transparent;
+}
+.app-house-link:hover {
+  border-bottom-color: var(--moss);
+}
 .hero { padding: 2.4rem 0 1.2rem; }
 h1, h2, h3 { font-family: var(--sans); font-weight: 600; letter-spacing: -0.02em; }
 h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.15; margin: 0 0 0.6rem; }
