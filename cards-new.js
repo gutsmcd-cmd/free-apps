@@ -50,6 +50,13 @@
       lineEn: "Send ready-made questions to your AI in one tap."
     },
     {
+      slug: "wakariyasuku",
+      ja: "わかりやすく",
+      en: "Make It Clear",
+      lineJa: "難しい文章を、やさしく言いかえる。",
+      lineEn: "Rewrite hard text in plain words."
+    },
+    {
       slug: "spell-camera",
       ja: "スペルチェックカメラ",
       en: "Spell Check Camera",
