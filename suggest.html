@@ -21,8 +21,8 @@ try{if(localStorage.getItem("m-free-apps-lang")==="en")document.documentElement.
           <a href="./index.html"><span class="t-ja">アプリ</span><span class="t-en">Apps</span></a>
           <a href="./index.html#japanese"><span class="t-ja">日本語</span><span class="t-en">Japanese</span></a>
           <a href="./index.html#general"><span class="t-ja">道具</span><span class="t-en">Utilities</span></a>
-          <a href="./about.html"><span class="t-ja">について</span><span class="t-en">About</span></a>
-          <a href="./suggest.html" aria-current="page"><span class="t-ja">提案</span><span class="t-en">Suggest</span></a>
+          <a href="./about.html"><span class="t-ja">このサイトについて</span><span class="t-en">About</span></a>
+          <a href="./suggest.html" aria-current="page"><span class="t-ja">アプリを提案</span><span class="t-en">Suggest</span></a>
         </nav>
         <div class="lang" role="group" aria-label="Language">
           <button type="button" data-set-lang="ja" class="lang-btn">日本語</button>
@@ -36,30 +36,30 @@ try{if(localStorage.getItem("m-free-apps-lang")==="en")document.documentElement.
     <main class="prose-page">
       <div class="wrap">
         <h1><span class="t-ja">道具を提案する</span><span class="t-en">Suggest a tool</span></h1>
-        <p class="lead"><span class="t-ja">無料、オフライン、ログインなし。特に、英語では便利なのに日本語だとかゆい道具。このフォームはメールアプリを開くだけで、ここには保存しません。</span><span class="t-en">Free, offline, no login. Especially welcome: handy English tools that feel clumsy in Japanese. This only opens your mail app. Nothing is stored here.</span></p>
+        <p class="lead"><span class="t-ja">無料、オフライン、ログインなし。特に、英語版は便利なのに、日本語ではかゆいところに手が届かない道具。このフォームはメールアプリを開くだけで、ここには保存しません。</span><span class="t-en">Free, offline, no login. Especially welcome: handy English tools that feel clumsy in Japanese. This only opens your mail app. Nothing is stored here.</span></p>
         <form class="suggest-card" id="suggest-form" novalidate>
           <div class="field">
             <label for="idea-name"><span class="t-ja">名前</span><span class="t-en">Name</span></label>
             <input id="idea-name" name="name" type="text" maxlength="80" required data-ph-ja="例: わりかん帳" data-ph-en="e.g. a bill splitter" />
           </div>
           <div class="field">
-            <label for="idea-line"><span class="t-ja">どの家族？</span><span class="t-en">Which family?</span></label>
+            <label for="idea-line"><span class="t-ja">どちらのグループ？</span><span class="t-en">Which family?</span></label>
             <select id="idea-line" name="line">
               <option value="General utility" data-ja="ふだんの道具" data-en="General utilities">ふだんの道具</option>
-              <option value="Japanese-first alternative" selected data-ja="日本語アプリの家族" data-en="Japanese app family">日本語アプリの家族</option>
+              <option value="Japanese-first alternative" selected data-ja="日本の暮らしのアプリ" data-en="Japanese app family">日本語アプリの家族</option>
               <option value="Not sure" data-ja="わからない" data-en="Not sure">わからない</option>
             </select>
           </div>
           <div class="field">
-            <label for="idea-ref"><span class="t-ja">英語の参考（なくてもいい）</span><span class="t-en">English reference (optional)</span></label>
+            <label for="idea-ref"><span class="t-ja">参考になる英語アプリ（任意）</span><span class="t-en">English reference (optional)</span></label>
             <input id="idea-ref" name="reference" type="text" maxlength="120" data-ph-ja="例: Squoosh" data-ph-en="e.g. Squoosh, PackPoint" />
           </div>
           <div class="field">
-            <label for="idea-why"><span class="t-ja">なぜ合うか</span><span class="t-en">Why it fits</span></label>
+            <label for="idea-why"><span class="t-ja">どんなことに困っていますか？</span><span class="t-en">Why it fits</span></label>
             <textarea id="idea-why" name="why" maxlength="2000" required data-ph-ja="どんな困りごとか。今の道具は広告、ログイン、日本語の弱さのどれか。" data-ph-en="What problem? Is today’s option full of ads, a login wall, or weak in Japanese?"></textarea>
           </div>
           <button class="open-btn" type="submit"><span class="t-ja">メールアプリで開く</span><span class="t-en">Open in email</span></button>
-          <p class="quiet"><span class="t-ja">gutsmcd@gmail.com へ、mailto: で送ります。サーバーはありません。</span><span class="t-en">Sends to gutsmcd@gmail.com with mailto:. No server, no tracking.</span> <a href="mailto:gutsmcd@gmail.com?subject=App%20suggestion%20for%20M%40%20Free%20Apps"><span class="t-ja">直接メール</span><span class="t-en">Email Mat</span></a></p>
+          <p class="quiet"><span class="t-ja">メールアプリで gutsmcd@gmail.com 宛てのメールが開きます。サーバーには保存しません。</span><span class="t-en">Sends to gutsmcd@gmail.com with mailto:. No server, no tracking.</span> <a href="mailto:gutsmcd@gmail.com?subject=App%20suggestion%20for%20M%40%20Free%20Apps"><span class="t-ja">直接メール</span><span class="t-en">Email Mat</span></a></p>
         </form>
       </div>
     </main>

@@ -20,7 +20,7 @@
       opt.textContent = opt.getAttribute(next === "en" ? "data-en" : "data-ja");
     });
     var titles = {
-      ja: { apps: "M@ 無料アプリ", about: "について — M@", suggest: "提案 — M@" },
+      ja: { apps: "M@ 無料アプリ", about: "このサイトについて — M@", suggest: "アプリを提案 — M@" },
       en: { apps: "M@ Free Apps", about: "About — M@", suggest: "Suggest — M@" }
     };
     var page = document.body.getAttribute("data-page");
@@ -34,7 +34,7 @@
     if (desc && page === "apps") {
       desc.setAttribute("content", next === "en"
         ? "A family of free, no-login, offline, minimal tools."
-        : "無料、ログインなし、オフライン。小さな道具の家族。");
+        : "無料・ログイン不要・オフラインで使える、小さなアプリ集。");
     }
   }
 
