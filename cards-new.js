@@ -43,6 +43,13 @@
       lineEn: "Remove backgrounds and build new pictures."
     },
     {
+      slug: "keshigomu",
+      ja: "けしゴム",
+      en: "Eraser",
+      lineJa: "写真の中のいらない物を、なぞって消す。",
+      lineEn: "Brush over things in your photos to erase them."
+    },
+    {
       slug: "one-tap-ask",
       ja: "ひと押し質問",
       en: "One-Tap Ask",
