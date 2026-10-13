@@ -1,0 +1,8 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <g transform="translate(34 30)"><rect width="56" height="56" rx="14" fill="#3e6b4c" opacity="0.18"/><text x="28" y="38" font-family="'Hiragino Sans', 'Noto Sans CJK JP', sans-serif" font-weight="700" font-size="22" fill="#2c4a3a" text-anchor="middle">駅</text></g>
+  <g transform="translate(34 96)"><rect width="56" height="56" rx="14" fill="#3e6b4c" opacity="0.18"/><text x="28" y="38" font-family="'Hiragino Sans', 'Noto Sans CJK JP', sans-serif" font-weight="700" font-size="22" fill="#2c4a3a" text-anchor="middle">円</text></g>
+  <path d="M108 88h44" stroke="#e4b15c" stroke-width="6" stroke-linecap="round"/><path d="M144 76l14 12-14 12" fill="none" stroke="#e4b15c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 46q0-16 16-16h92q16 0 16 16v64q0 16-16 16h-58l-30 26v-26h-4q-16 0-16-16z" fill="#2c4a3a"/>
+  <text x="240" y="98" font-family="'Hiragino Sans', 'Noto Sans CJK JP', sans-serif" font-weight="700" font-size="52" fill="#f6f1e7" text-anchor="middle">?</text>
+  <circle cx="282" cy="128" r="14" fill="#e4b15c"/><circle cx="282" cy="128" r="22" fill="none" stroke="#e4b15c" stroke-width="4" opacity="0.5"/>
+</svg>
