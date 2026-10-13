@@ -34,6 +34,13 @@
       en: "Breathe",
       lineJa: "ゆっくり、息を整える。",
       lineEn: "Slow down and breathe."
+    },
+    {
+      slug: "kirinuki",
+      ja: "きりぬき",
+      en: "Cutout",
+      lineJa: "写真の背景を消して、組み合わせる。",
+      lineEn: "Remove backgrounds and build new pictures."
     }
   ];
 

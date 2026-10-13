@@ -1,0 +1,15 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="40" y="30" width="110" height="120" rx="10" fill="#c9d8c5" stroke="#e4d7c4" stroke-width="2"/>
+  <path d="M40 120 l30 -26 l22 18 l26 -30 l32 38 v20 a10 10 0 0 1 -10 10 h-90 a10 10 0 0 1 -10 -10 z" fill="#3e6b4c" opacity="0.55"/>
+  <circle cx="95" cy="72" r="18" fill="#2c261f"/>
+  <path d="M65 150 c0-34 14-52 30-52 s30 18 30 52 z" fill="#2c261f"/>
+  <path d="M158 90 h18 m-8 -8 l8 8 l-8 8" stroke="#e4b15c" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="186" y="30" width="110" height="120" rx="10" fill="#fffaf3" stroke="#e4d7c4" stroke-width="2"/>
+  <rect x="186" y="30" width="110" height="120" rx="10" fill="#e4b15c" opacity="0.35"/>
+  <circle cx="262" cy="56" r="12" fill="#fffaf3"/>
+  <circle cx="232" cy="72" r="18" fill="#2c261f"/>
+  <path d="M202 150 c0-34 14-52 30-52 s30 18 30 52 z" fill="#2c261f"/>
+  <rect x="246" y="112" width="40" height="10" rx="4" fill="#3e6b4c"/>
+  <rect x="252" y="128" width="28" height="8" rx="4" fill="#3e6b4c" opacity="0.6"/>
+  <path d="M66 46 a40 40 0 0 1 58 0" stroke="#fffaf3" stroke-width="3" stroke-dasharray="6 5" fill="none"/>
+</svg>
