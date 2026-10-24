@@ -45,7 +45,7 @@
         "<li>" + t("「インストール」を押して完了。", "Tap “Install”. Done.") + "</li>" +
         "<li>" + t("特別な許可が必要なアプリ（ブラック画面、浮かぶ時計）で「制限付き設定」と出たら：アプリ情報 → ⋮ →「制限付き設定を許可」。", "Apps that need a special permission (Black Screen, Floating Clock): if Android says a setting is restricted, go to App info → ⋮ → “Allow restricted settings”.") + "</li>" +
         "</ol>" +
-        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面・浮かぶ時計・アプリ図鑑は除く）。Chrome が入っていれば、全画面で使えます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen, Floating Clock and App Guide). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
+        '<p class="quiet">' + t("アプリはこのサイトの最新版を開くので、更新は自動です（ブラック画面・浮かぶ時計・アプリ図鑑・オフラインブラウザは除く）。Chrome が入っていれば、全画面で使えます。無料・広告なし・ログインなし。", "The apps open the latest version from this site, so updates are automatic (except Black Screen, Floating Clock, App Guide and Offline Browser). Works full-screen with Chrome installed. Free, no ads, no login.") + "</p>" +
         '<form method="dialog"><button class="open-btn" type="submit">' + t("閉じる", "Close") + "</button></form>";
       document.body.appendChild(help);
     }
@@ -188,10 +188,25 @@
     gen.querySelector('[data-apk="floating-clock"]').insertAdjacentHTML("afterend", APP_GUIDE);
   }
 
+  // ---------- Offline Browser card (General utilities, Android APK only) ----------
+  var OFFLINE_BROWSER = '<article class="card" data-apk="offline-browser" data-apk-only="1">' +
+    '<a class="art-link" href="https://github.com/gutsmcd-cmd/offline-browser" rel="noopener">' +
+    '<div class="art"><img class="illu" src="./assets/art/offline-browser.svg" alt="" width="320" height="176" /></div>' +
+    '<div class="card-copy"><h3>' + t("オフラインブラウザ", "Offline Browser") + "</h3>" +
+    '<p class="line">' + t("ページを保存して、電波がなくても読む。", "Save pages and read them with no signal.") + "</p></div></a>" +
+    '<a class="src" href="https://github.com/gutsmcd-cmd/offline-browser" rel="noopener">GitHub</a></article>';
+
+  function ensureOfflineBrowser(gen) {
+    if (!gen || !gen.querySelector('[data-apk="app-guide"]')) return;
+    if (gen.querySelector('[data-apk="offline-browser"]')) return;
+    gen.querySelector('[data-apk="app-guide"]').insertAdjacentHTML("afterend", OFFLINE_BROWSER);
+  }
+
   function scan() {
     ensureBlackScreen(document.getElementById("card-mount-gen"));
     ensureFloatingClock(document.getElementById("card-mount-gen"));
     ensureAppGuide(document.getElementById("card-mount-gen"));
+    ensureOfflineBrowser(document.getElementById("card-mount-gen"));
     ["card-mount", "card-mount-gen"].forEach(function (id) {
       var m = document.getElementById(id);
       if (!m) return;
