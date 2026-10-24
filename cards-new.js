@@ -50,6 +50,13 @@
       lineEn: "Brush over things in your photos to erase them."
     },
     {
+      slug: "kukkiri",
+      ja: "くっきり写真",
+      en: "Photo Sharpener",
+      lineJa: "小さい・ぼやけた写真を、くっきり拡大。",
+      lineEn: "Enlarge small or blurry photos, sharper."
+    },
+    {
       slug: "one-tap-ask",
       ja: "ひと押し質問",
       en: "One-Tap Ask",
@@ -69,6 +76,13 @@
       en: "Spell Check Camera",
       lineJa: "看板やメニューの英語のミスを見つける。",
       lineEn: "Spot English spelling mistakes on signs and menus."
+    },
+    {
+      slug: "camera-honyaku",
+      ja: "カメラ翻訳",
+      en: "Camera Translator",
+      lineJa: "日本語の看板や紙を、撮って英語で読む。",
+      lineEn: "Snap Japanese signs and papers, read them in English."
     }
   ];
 
