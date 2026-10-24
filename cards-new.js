@@ -112,13 +112,10 @@
   var done = false;
 
   // cards-a.js / cards-b.js add their cards asynchronously, so wait for the
-  // "Soon" card (動画を軽く) and insert just before it. Fall back to appending.
+  // 動画しぼる (Video Shrinker) card and insert just before it. Fall back to appending.
   function findSoon() {
-    var soon = mount.querySelectorAll("article.card.is-soon");
-    for (var i = 0; i < soon.length; i++) {
-      if (soon[i].textContent.indexOf("動画を軽く") !== -1) return soon[i];
-    }
-    return null;
+    var a = mount.querySelector('article.card a[href*="/douga-shiboru/"]');
+    return a ? a.closest("article") : null;
   }
 
   function place(force) {
