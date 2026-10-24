@@ -83,6 +83,13 @@
       en: "Camera Translator",
       lineJa: "日本語の看板や紙を、撮って英語で読む。",
       lineEn: "Snap Japanese signs and papers, read them in English."
+    },
+    {
+      slug: "onsei-nyuryoku",
+      ja: "音声入力",
+      en: "Voice Typing",
+      lineJa: "話すだけで文字に。電波なしでも。",
+      lineEn: "Speak and it becomes text, even with no signal."
     }
   ];
 
