@@ -1,0 +1,9 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="70" y="22" width="100" height="136" rx="6" fill="#fffaf3" stroke="#2c261f" stroke-width="2" transform="rotate(-6 120 90)"/>
+  <rect x="150" y="18" width="100" height="140" rx="6" fill="#fffaf3" stroke="#2c261f" stroke-width="2"/>
+  <rect x="166" y="32" width="68" height="8" rx="4" fill="#3e6b4c"/>
+  <g fill="none" stroke="#2c261f" stroke-width="2"><rect x="168" y="52" width="20" height="20"/><rect x="188" y="52" width="20" height="20" fill="#e4b15c"/><rect x="208" y="52" width="20" height="20"/><rect x="188" y="72" width="20" height="20"/><rect x="188" y="92" width="20" height="20"/></g>
+  <path d="M168 132 q14 -16 28 0 t28 0 t28 0" stroke="#3e6b4c" stroke-width="4" fill="none" stroke-linecap="round" transform="translate(-6 0)"/>
+  <g transform="rotate(-6 120 90)" fill="none" stroke="#3e6b4c" stroke-width="3"><path d="M86 50 h40 v20 h-24 v20 h40"/><path d="M92 110 h50 v24 h-36"/></g>
+  <circle cx="96" cy="40" r="4" fill="#e4b15c"/>
+</svg>

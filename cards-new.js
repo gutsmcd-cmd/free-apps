@@ -104,6 +104,13 @@
       en: "Voice Typing",
       lineJa: "話すだけで文字に。電波なしでも。",
       lineEn: "Speak and it becomes text, even with no signal."
+    },
+    {
+      slug: "classroom-printables",
+      ja: "教室プリント工房",
+      en: "Classroom Printables",
+      lineJa: "ことばさがし・めいろ・ビンゴなど11種類のプリントをA4で。答えつき。",
+      lineEn: "Word searches, mazes, bingo and 8 more printables for A4, with answer keys."
     }
   ];
 
