@@ -1,6 +1,20 @@
 (function () {
   var cards = [
     {
+      slug: "ar-measure",
+      ja: "ARメジャー",
+      en: "AR Tape Measure",
+      lineJa: "スマホのカメラで、物の長さを測る。",
+      lineEn: "Measure real things with your phone camera."
+    },
+    {
+      slug: "read-aloud",
+      ja: "読みきかせ",
+      en: "Read Aloud",
+      lineJa: "文章・PDF・ウェブページを声で読む。",
+      lineEn: "Hear text, PDFs and web pages read out loud."
+    },
+    {
       slug: "loupe",
       ja: "ルーペ",
       en: "Magnifier",

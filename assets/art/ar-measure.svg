@@ -1,0 +1,15 @@
+<svg class="illu" viewBox="0 0 320 176" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="320" height="176" fill="#f6f1e7"/>
+  <rect x="104" y="18" width="112" height="146" rx="16" fill="#2c261f"/>
+  <rect x="112" y="30" width="96" height="122" rx="6" fill="#d9e4dc"/>
+  <path d="M112 118 L208 98 L208 152 L112 152 Z" fill="#c9b79c"/>
+  <ellipse cx="134" cy="126" rx="10" ry="4" fill="none" stroke="#fffaf3" stroke-width="3"/>
+  <circle cx="134" cy="126" r="4" fill="#e4b15c"/>
+  <circle cx="188" cy="112" r="4" fill="#e4b15c"/>
+  <path d="M134 126 L188 112" stroke="#fffaf3" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="140" y="92" width="46" height="16" rx="5" fill="#fffaf3"/>
+  <rect x="146" y="98" width="34" height="4" rx="2" fill="#3e6b4c"/>
+  <rect x="226" y="120" width="70" height="18" rx="3" fill="#e4b15c"/>
+  <g stroke="#2c261f" stroke-width="2"><path d="M234 120v8M244 120v5M254 120v8M264 120v5M274 120v8M284 120v5"/></g>
+  <rect x="24" y="120" width="70" height="18" rx="3" fill="#e4b15c"/>
+  <g stroke="#2c261f" stroke-width="2"><path d="M32 120v8M42 120v5M52 120v8M62 120v5M72 120v8M82 120v5"/></g>
+</svg>
