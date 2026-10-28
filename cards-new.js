@@ -1,6 +1,13 @@
 (function () {
   var cards = [
     {
+      slug: "ar-solar-system",
+      ja: "ARたいようけい",
+      en: "AR Solar System",
+      lineJa: "床や机に太陽系をおいて、惑星をタップで豆知識。",
+      lineEn: "Put the solar system on your floor and tap planets for facts."
+    },
+    {
       slug: "origami-steps",
       ja: "おりがみステップ",
       en: "Origami Steps",
