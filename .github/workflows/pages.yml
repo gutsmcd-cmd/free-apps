@@ -28,6 +28,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Decode base64 APKs (apk/*.apk.b64 -> apk/*.apk)
+        run: |
+          for f in apk/*.apk.b64; do [ -e "$f" ] || continue; base64 -d "$f" > "${f%.b64}" && rm "$f"; done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
