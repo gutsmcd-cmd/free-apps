@@ -1,6 +1,13 @@
 (function () {
   var cards = [
     {
+      slug: "origami-steps",
+      ja: "おりがみステップ",
+      en: "Origami Steps",
+      lineJa: "定番のおりがみを、一歩ずつ図で。",
+      lineEn: "Fold classic origami, one picture at a time."
+    },
+    {
       slug: "ar-measure",
       ja: "ARメジャー",
       en: "AR Tape Measure",
