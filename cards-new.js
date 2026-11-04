@@ -1,6 +1,13 @@
 (function () {
   var cards = [
     {
+      slug: "photo-to-text",
+      ja: "写真から文字",
+      en: "Photo to Text",
+      lineJa: "メモの写真を文字に。オフラインAI入り（約100 MB）。手書きは英語が中心。",
+      lineEn: "Turn a photo of notes into text. Includes offline AI (~100 MB). Handwriting reading is English-focused."
+    },
+    {
       slug: "ar-solar-system",
       ja: "ARたいようけい",
       en: "AR Solar System",
