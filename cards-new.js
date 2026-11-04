@@ -74,22 +74,22 @@
       slug: "kirinuki",
       ja: "きりぬき",
       en: "Cutout",
-      lineJa: "写真の背景を消して、組み合わせる。",
-      lineEn: "Remove backgrounds and build new pictures."
+      lineJa: "写真の背景を消して、組み合わせる。オフラインAI内蔵（約71 MB）。",
+      lineEn: "Remove backgrounds and build new pictures. Includes offline AI (~71 MB)."
     },
     {
       slug: "keshigomu",
       ja: "けしゴム",
       en: "Eraser",
-      lineJa: "写真の中のいらない物を、なぞって消す。",
-      lineEn: "Brush over things in your photos to erase them."
+      lineJa: "写真の中のいらない物を、なぞって消す。オフラインAI内蔵（約222 MB）。",
+      lineEn: "Brush over things in your photos to erase them. Includes offline AI (~222 MB)."
     },
     {
       slug: "kukkiri",
       ja: "くっきり写真",
       en: "Photo Sharpener",
-      lineJa: "小さい・ぼやけた写真を、くっきり拡大。",
-      lineEn: "Enlarge small or blurry photos, sharper."
+      lineJa: "小さい・ぼやけた写真を、くっきり拡大。オフラインAI内蔵（約19 MB）。",
+      lineEn: "Enlarge small or blurry photos, sharper. Includes offline AI (~19 MB)."
     },
     {
       slug: "one-tap-ask",
@@ -109,22 +109,22 @@
       slug: "spell-camera",
       ja: "スペルチェックカメラ",
       en: "Spell Check Camera",
-      lineJa: "看板やメニューの英語のミスを見つける。",
-      lineEn: "Spot English spelling mistakes on signs and menus."
+      lineJa: "看板やメニューの英語のミスを見つける。オフラインAI内蔵（約7 MB）。",
+      lineEn: "Spot English spelling mistakes on signs and menus. Includes offline AI (~7 MB)."
     },
     {
       slug: "camera-honyaku",
       ja: "カメラ翻訳",
       en: "Camera Translator",
-      lineJa: "日本語の看板や紙を、撮って英語で読む。",
-      lineEn: "Snap Japanese signs and papers, read them in English."
+      lineJa: "日本語の看板や紙を、撮って英語で読む。オフラインAI内蔵（約145 MB）。",
+      lineEn: "Snap Japanese signs and papers, read them in English. Includes offline AI (~145 MB)."
     },
     {
       slug: "onsei-nyuryoku",
       ja: "音声入力",
       en: "Voice Typing",
-      lineJa: "話すだけで文字に。電波なしでも。",
-      lineEn: "Speak and it becomes text, even with no signal."
+      lineJa: "話すだけで文字に。電波なしでも。オフラインAI内蔵（約102 MB）。",
+      lineEn: "Speak and it becomes text, even with no signal. Includes offline AI (~102 MB)."
     },
     {
       slug: "classroom-printables",
